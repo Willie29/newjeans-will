@@ -74,7 +74,7 @@ songs.forEach((song) => {
     const listItem = document.createElement('li');
     listItem.className = 'flex flex-col items-center w-[300px] transition-all duration-300 hover:scale-110 hover:text-white';
     listItem.innerHTML = `
-        <a href="${song.videoURL}" target="_blank"><img src="${song.imageURL}" class="border-2 border-transparent rounded-[20px] transition-color duration-300 hover:border-white" alt=""></a>
+        <a href="${song.videoURL}" target="_blank"><img src="https://storage.googleapis.com/nj-img/${song.imageURL}" class="border-2 border-transparent rounded-[20px] transition-color duration-300 hover:border-white" alt=""></a>
         <h3 class="text-[20px]">${song.title}</h3>
     `;
     songList.appendChild(listItem);
