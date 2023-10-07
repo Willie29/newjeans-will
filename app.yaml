@@ -7,3 +7,5 @@ handlers:
 - url: /
   static_files: newjeansbywill.html
   upload: newjeansbywill.html
+- url: /js
+  static_dir: js
