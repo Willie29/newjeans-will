@@ -1,15 +1,9 @@
 runtime: python27
 api_version: 1
 threadsafe: true
+service: frontend
 
 handlers:
-- url: /css
-  static_dir: www/css
-
 - url: /
-  static_files: www/profile.html
-  upload: www/profile.html
-
-- url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+  static_files: newjeansbywill.html
+  upload: newjeansbywill.html
