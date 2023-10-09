@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewJeans</title>
     <link rel="website icon" type="jpg" href="https://storage.googleapis.com/nj-img/assets/rabbit.jpg">
+    <script src="https://kit.fontawesome.com/2fee54d3d8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Tilt+Neon&display=swap"
@@ -17,27 +18,67 @@
       }, 4000);
     </script> -->
   </head>
-
-<body style="font-family: 'Tilt Neon'">
+  
+  <body style="font-family: 'Tilt Neon'">
     <header id="header">
-        <nav class="flex bg-gradient-to-l from-white to-[#639fe7] to-50% justify-between py-4 px-12 max-md:px-4 fixed top-0 left-0 right-0 z-50">
-            <ul class="flex text-[20px] gap-10 max-md:text-[15px] max-md:gap-4 items-center">
+        <nav class="flex shrink-0 bg-gradient-to-l from-white to-[#639fe7] to-50% justify-between py-4 px-12 max-[815px]:px-4 fixed top-0 left-0 right-0 z-50">
+            <div class="hidden max-[600px]:flex  max-[600px]:items-center">
+                
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="inline-flex items-center transition-color ease-in-out duration-300 hover:text-white" type="button"><i class="fa-solid fa-bars scale-125"></i></button>
+                  <!-- Dropdown menu -->
+                    <div id="dropdown" class="absolute text-center hidden bg-white/50 backdrop-blur rounded-lg w-64 border border-gray-900 overflow-hidden" >
+                        <ul class="py-4 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li class="px-4 py-2 hover:bg-[#639fe7]/75 hover:text-white">
+                                <a href="#member">Member</a>
+                            </li>
+                            <li class="px-4 py-2 hover:bg-[#639fe7]/75 hover:text-white">
+                                <a href="#song">Song</a>
+                            </li>
+                            <li class="px-4 py-2 hover:bg-[#639fe7]/75 hover:text-white">
+                                <a href="#info">Pictures</a>
+                            </li>
+                        </ul>
+                        <div class="pt-2 border-t-2 border-black/25">
+                            <h2>Social Media</h2>
+                        </div>
+                        <ul class="flex justify-center gap-4 py-4">
+                            <li class="scale-150 max-[815px]:scale-125 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]">
+                                <a href="https://www.instagram.com/newjeans_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]">
+                                <a href="https://www.tiktok.com/@newjeans_official" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+                            <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]">
+                                <a href="https://twitter.com/NewJeans_ADOR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]">
+                                <a href="https://www.youtube.com/@NewJeans_official" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]">
+                                <a href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <ul class="flex text-[20px] gap-10 max-[815px]:text-[15px] max-[815px]:gap-4 items-center max-[600px]:hidden">
                 <li class="border-y-2 border-transparent transition-all ease-in-out duration-300 hover:text-white hover:border-white"><a href="#member">Member</a></li>
                 <li class="border-y-2 border-transparent transition-all ease-in-out duration-300 hover:text-white hover:border-white"><a href="#song">Song</a></li>
                 <li class="border-y-2 border-transparent transition-all ease-in-out duration-300 hover:text-white hover:border-white"><a href="#info">Pictures</a></li>
             </ul>
-            <a href="#header" class="flex items-center justify-center w-full h-[30px] px-16"><img src="https://storage.googleapis.com/nj-img/assets/logo.svg" class="h-full max-[900px]:h-[20px]" alt="NewJeans" title="NewJeans"></a>
-            <ul class="flex gap-8 max-md:gap-4 items-center">
-                <li class="w-[20px] max-md:w-[15px] max-sm:w-[5px]"><a href="https://www.instagram.com/newjeans_official/" target="_blank"><img src="https://storage.googleapis.com/nj-img/assets/instagram.png" alt="Instagram"></a></li>
-                <li class="w-[20px] max-md:w-[15px] max-sm:w-[5px]"><a href="https://www.tiktok.com/@newjeans_official" target="_blank"><img src="https://storage.googleapis.com/nj-img/assets/tik-tok.png" alt="TikTok"></a></li>
-                <li class="w-[20px] max-md:w-[15px] max-sm:w-[5px]"><a href="https://twitter.com/NewJeans_ADOR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="https://storage.googleapis.com/nj-img/assets/twitter.png" alt="Twitter"></a></li>
-                <li class="w-[20px] max-md:w-[15px] max-sm:w-[5px]"><a href="https://www.youtube.com/@NewJeans_official" target="_blank"><img src="https://storage.googleapis.com/nj-img/assets/youtube.png" alt="Youtube"></a></li>
-                <li class="w-[20px] max-md:w-[15px] max-sm:w-[5px]"><a href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d" target="_blank"><img src="https://storage.googleapis.com/nj-img/assets/spotify.png" alt="Spotify"></a></li>
+            <a href="#header" class="flex shrink-0 items-center justify-center h-[30px] px-16 max-[815px]:px-0">
+                <img src="https://storage.googleapis.com/nj-img/assets/logo.svg" class="h-full max-[815px]:h-[20px]" alt="NewJeans" title="NewJeans">
+            </a>
+            <ul class="flex gap-8 max-[815px]:gap-4 items-center max-[600px]:hidden">
+                <li class="scale-150 max-[815px]:scale-125 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]"><a href="https://www.instagram.com/newjeans_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]"><a href="https://www.tiktok.com/@newjeans_official" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]"><a href="https://twitter.com/NewJeans_ADOR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]"><a href="https://www.youtube.com/@NewJeans_official" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="scale-[130%] max-[815px]:scale-100 transition-all ease-in-out duration-200 hover:text-white hover:drop-shadow-[0_0_3px_rgba(99,159,231,1)]"><a href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
             </ul>
+            <div class="hidden max-[600px]:flex"></div>
         </nav>
-        <img src="https://storage.googleapis.com/nj-img/assets/group2.png" alt="NewJeans" class="w-[100%] pt-14">
+        <img src="https://storage.googleapis.com/nj-img/assets/group2.png" alt="NewJeans" class="w-full pt-14">
     </header>
-
     <main>
         <div>
             <div id="member" class="flex flex-col items-center pb-20">
@@ -53,9 +94,7 @@
                     <script src="js/song.js"></script>
                 </ul>
             </section>
-            
-        
-            
+
             <section id="info" class="flex flex-col items-center pb-20">
                 <h2 class="text-[70px] py-16">Pictures</h2>
                 <div class="flex max-[1200px]:flex-col max-[1200px]:gap-y-8">

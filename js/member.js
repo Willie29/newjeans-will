@@ -19,7 +19,7 @@ const members = [
         name: "HAERIN",
         imageURL: "assets/HAERIN.jpg",
     },
-]
+];
 
 const memberList = document.getElementById('memberList');
 members.forEach((member) => {
